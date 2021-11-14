@@ -1,0 +1,71 @@
+{
+    "name": "package-skeleton",
+    "version": "1.0.0",
+    "description": "{{package.description}}",
+    "author": "{{package.author.name}} <{{package.author.email}}>",
+    "license": "MIT",
+    "main": "packages/main/dist/index.cjs",
+    "scripts": {
+        "dev": "vite --host",
+        "build": "vite build",
+        "build:el": "node scripts/build.js",
+        "precompile": "MODE=production npm run build",
+        "compile": "electron-builder build --config electron-builder.config.js --dir --config.asar=false",
+        "serve": "vite preview",
+        "test": "jest tests --verbose",
+        "test:coverage": "jest tests --coverage",
+        "lint": "./node_modules/.bin/eslint --ext ts,js src/",
+        "lint:fix": "./node_modules/.bin/eslint --ext ts,js --fix src/",
+        "lint:staged": "./node_modules/.bin/lint-staged",
+        "prepare": "husky install"
+    },
+    "dependencies": {
+        "electron-updater": "^4.3.9",
+        "electron-webpack": "^2.8.2",
+        "vue": "^3.2",
+        "vue-router": "^4.0",
+        "vuex": "^4.0"
+    },
+    "lint-staged": {
+        "*.{js,ts,vue}": [
+            "./node_modules/.bin/prettier --config .prettierrc --write",
+            "./node_modules/.bin/eslint --ext ts,js --fix"
+        ],
+        "*.{json}": [
+            "./node_modules/.bin/prettier --config .prettierrc --write"
+        ],
+        "*.{yaml,yml}": [
+            "./node_modules/.bin/prettier --config .prettierrc --tab-width 2 --write"
+        ]
+    },
+    "devDependencies": {
+        "@headlessui/vue": "^1.4.0",
+        "@heroicons/vue": "^1.0.3",
+        "@tailwindcss/aspect-ratio": "^0.2.1",
+        "@tailwindcss/forms": "^0.3.3",
+        "@tailwindcss/line-clamp": "^0.2.1",
+        "@tailwindcss/typography": "^0.4.1",
+        "@types/electron-devtools-installer": "2.2.0",
+        "@types/jest": "^27.0.0",
+        "@types/tailwindcss": "^2.2.1",
+        "@typescript-eslint/eslint-plugin": "^4.9.1",
+        "@typescript-eslint/parser": "^4.9.1",
+        "@vitejs/plugin-vue": "^1.9.0",
+        "@vue/compiler-sfc": "^3.2",
+        "autoprefixer": "^10.3.1",
+        "electron": "15.0.0",
+        "electron-builder": "22.11.7",
+        "electron-devtools-installer": "3.2.0",
+        "eslint": "^7.15.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "husky": "^7.0.1",
+        "jest": "^27.0.6",
+        "lint-staged": "^11.1.0",
+        "prettier": "^2.4.0",
+        "tailwindcss": "^2.2.7",
+        "ts-jest": "^27.0.4",
+        "typescript": "^4.4",
+        "vite": "^2.5.0"
+    }
+}

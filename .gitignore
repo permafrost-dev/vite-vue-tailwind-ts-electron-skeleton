@@ -1,0 +1,12 @@
+/.idea
+/.vscode
+/build
+/coverage
+/dist
+/dist-ssr
+/node_modules
+package-lock.json
+yarn.lock
+*.local
+*.log
+

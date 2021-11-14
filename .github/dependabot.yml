@@ -1,0 +1,20 @@
+version: 2
+updates:
+
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'daily'
+      time: '01:00'
+    labels:
+      - 'dependencies'
+      
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: daily
+      time: '02:00'
+    labels:
+      - 'dependencies'
+    open-pull-requests-limit: 20
+    versioning-strategy: increase-if-necessary
