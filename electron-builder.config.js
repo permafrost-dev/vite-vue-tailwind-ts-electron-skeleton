@@ -13,7 +13,7 @@ const config = {
     buildResources: 'buildResources',
   },
   files: [
-    'src/index.ts',
+    'packages/renderer/src/index.ts',
     'packages/**/dist/**',
   ],
   extraMetadata: {
