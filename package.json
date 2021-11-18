@@ -11,6 +11,7 @@
         "build:el": "node scripts/build.js",
         "precompile": "MODE=production npm run build",
         "compile": "electron-builder build --config electron-builder.config.js --dir --config.asar=false",
+        "start:el": "npm run build && npm run build:el && npm run compile && ./dist/linux-unpacked/project-forge",
         "serve": "vite preview",
         "test": "jest tests --verbose",
         "test:coverage": "jest tests --coverage",
@@ -18,13 +19,6 @@
         "lint:fix": "./node_modules/.bin/eslint --ext ts,js --fix src/",
         "lint:staged": "./node_modules/.bin/lint-staged",
         "prepare": "husky install"
-    },
-    "dependencies": {
-        "electron-updater": "^4.3.9",
-        "electron-webpack": "^2.8.2",
-        "vue": "^3.2",
-        "vue-router": "^4.0",
-        "vuex": "^4.0"
     },
     "lint-staged": {
         "*.{js,ts,vue}": [
@@ -37,6 +31,13 @@
         "*.{yaml,yml}": [
             "./node_modules/.bin/prettier --config .prettierrc --tab-width 2 --write"
         ]
+    },
+    "dependencies": {
+        "electron-updater": "^4.3.9",
+        "electron-webpack": "^2.8.2",
+        "vue": "^3.2",
+        "vue-router": "^4.0",
+        "vuex": "^4.0"
     },
     "devDependencies": {
         "@headlessui/vue": "^1.4.0",
@@ -66,7 +67,7 @@
         "prettier": "^2.4.0",
         "tailwindcss": "^2.2.7",
         "ts-jest": "^27.0.4",
-        "typescript": "^4.4",
+        "typescript": "^4.5",
         "vite": "^2.5.0",
         "vue-eslint-parser": "^8.0.1"
     }
