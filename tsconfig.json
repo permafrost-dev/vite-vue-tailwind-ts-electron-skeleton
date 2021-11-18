@@ -9,7 +9,7 @@
         "jsx": "preserve",
         "sourceMap": false,
         "lib": ["esnext", "dom"],
-        "types": ["jest", "vite/client"],
+        "types": ["jest", "node", "vite/client"],
         "paths": {
             "@/*": ["src/*"]
         }
