@@ -11,9 +11,16 @@
         "lib": ["esnext", "dom"],
         "types": ["jest", "vite/client"],
         "paths": {
-            "@/*": ["./packages/renderer/src/*"]
+            "@/*": ["src/*"]
         }
     },
-    "include": ["packages/renderer/**/*.ts", "packages/renderer/**/*.vue", "packages/renderer/**/*.js", "src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"],
+    "include": [
+        "packages/renderer/**/*.ts",
+        "packages/renderer/**/*.vue",
+        "packages/renderer/**/*.js",
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.vue"
+    ],
     "exclude": ["node_modules", "dist", "public", "tests", "scripts"]
 }

@@ -31,6 +31,11 @@ const packageInfo = {
         email: '',
         github: '',
     },
+    vendor: {
+        name: '',
+        email: '',
+        github: '',
+    },
 };
 
 const installDependencies = () => {
@@ -73,6 +78,9 @@ const replaceVariablesInFile = (filename, packageInfo) => {
         .replace(/\{\{package\.author\.email\}\}/g, packageInfo.author.email)
         .replace(/\{\{package\.author\.github\}\}/g, packageInfo.author.github)
         .replace(/\{\{package\.org\.github\}\}/g, packageInfo.org.github)
+        .replace(/\{\{package\.vendor\.name\}\}/g, packageInfo.vendor.name)
+        .replace(/\{\{package\.vendor\.email\}\}/g, packageInfo.vendor.email)
+        .replace(/\{\{package\.vendor\.github\}\}/g, packageInfo.vendor.github)
         .replace('Template Setup: run `node configure-package.js` to configure.\n', '');
 
     if (originalContent != content) {
@@ -132,6 +140,9 @@ const populatePackageInfo = async (onlyEmpty = false) => {
     await conditionalAsk(packageInfo.author, 'name', onlyEmpty, 'author name?');
     await conditionalAsk(packageInfo.author, 'email', onlyEmpty, 'author email?');
     await conditionalAsk(packageInfo.author, 'github', onlyEmpty, 'author github username?');
+    await conditionalAsk(packageInfo.vendor, 'name', onlyEmpty, 'vendor name?');
+    await conditionalAsk(packageInfo.vendor, 'email', onlyEmpty, 'vendor contact email?');
+    await conditionalAsk(packageInfo.vendor, 'github', onlyEmpty, 'vendor github username?');
 
     packageInfo.org.github = packageInfo.name.split('/').shift();
 };
