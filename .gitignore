@@ -9,4 +9,5 @@ package-lock.json
 yarn.lock
 *.local
 *.log
-
+*.ignore
+dist/
