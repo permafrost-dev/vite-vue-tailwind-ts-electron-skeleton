@@ -31,12 +31,23 @@ First-party plugins needed for Tailwind UI:
 
 ## Getting Started 🚀
 
+First, configure the project:
+
+```sh
+node configure-package.js
+```
+
 npm:
 ```sh
 npm install
 npm run dev
 npm run build
 npm run serve
+```
+
+...or start the Electron app:
+```sh
+npm run start:el
 ```
 
 ## Testing
