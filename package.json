@@ -54,7 +54,7 @@
         "@vitejs/plugin-vue": "^1.9.0",
         "@vue/compiler-sfc": "^3.2",
         "autoprefixer": "^10.3.1",
-        "electron": "16.0.0",
+        "electron": "16.0.1",
         "electron-builder": "22.13.1",
         "electron-devtools-installer": "3.2.0",
         "eslint": "^8.0.0",
