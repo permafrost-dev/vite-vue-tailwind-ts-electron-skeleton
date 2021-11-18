@@ -31,7 +31,7 @@
             "./node_modules/.bin/prettier --config .prettierrc --write",
             "./node_modules/.bin/eslint --ext ts,js --fix"
         ],
-        "*.{json}": [
+        "*.json": [
             "./node_modules/.bin/prettier --config .prettierrc --write"
         ],
         "*.{yaml,yml}": [
