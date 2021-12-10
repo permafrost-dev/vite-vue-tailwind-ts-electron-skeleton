@@ -44,7 +44,7 @@
         "@heroicons/vue": "^1.0.3",
         "@tailwindcss/aspect-ratio": "^0.4.0",
         "@tailwindcss/forms": "^0.4.0",
-        "@tailwindcss/line-clamp": "^0.2.1",
+        "@tailwindcss/line-clamp": "^0.3.0",
         "@tailwindcss/typography": "^0.5.0",
         "@types/electron-devtools-installer": "2.2.0",
         "@types/jest": "^27.0.0",
