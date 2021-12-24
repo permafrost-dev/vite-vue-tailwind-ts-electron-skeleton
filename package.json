@@ -15,6 +15,7 @@
         "serve": "vite preview",
         "test": "jest tests --verbose",
         "test:coverage": "jest tests --coverage",
+        "fmt": "./node_modules/.bin/prettier --config prettier.config.js --write 'src/**/*.{js,ts,json,yml,yaml}' 'tests/**/*.{js,ts,json,yml,yaml}' './*.{js,yml,yaml,json}'",
         "lint": "./node_modules/.bin/eslint --ext ts,js src/",
         "lint:fix": "./node_modules/.bin/eslint --ext ts,js --fix src/",
         "lint:staged": "./node_modules/.bin/lint-staged",
@@ -22,14 +23,14 @@
     },
     "lint-staged": {
         "*.{js,ts,vue}": [
-            "./node_modules/.bin/prettier --config .prettierrc --write",
+            "./node_modules/.bin/prettier --config prettier.config.js --write",
             "./node_modules/.bin/eslint --ext ts,js --fix"
         ],
-        "*.json": [
-            "./node_modules/.bin/prettier --config .prettierrc --write"
+        "*.{json,css,scss,gql}": [
+            "./node_modules/.bin/prettier --config prettier.config.js --write"
         ],
         "*.{yaml,yml}": [
-            "./node_modules/.bin/prettier --config .prettierrc --tab-width 2 --write"
+            "./node_modules/.bin/prettier --config prettier.config.js --tab-width 2 --write"
         ]
     },
     "dependencies": {
