@@ -1,26 +1,26 @@
 {
-    compilerOptions: {
-        target: 'esnext',
-        module: 'esnext',
-        moduleResolution: 'node',
-        esModuleInterop: true,
-        allowJs: true,
-        strict: true,
-        jsx: 'preserve',
-        sourceMap: false,
-        lib: ['esnext', 'dom'],
-        types: ['jest', 'node', 'vite/client'],
-        paths: {
-            '@/*': ['src/*'],
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "allowJs": true,
+        "strict": true,
+        "jsx": "preserve",
+        "sourceMap": false,
+        "lib": ["esnext", "dom"],
+        "types": ["jest", "node", "vite/client"],
+        "paths": {
+            "@/*": ["src/*"],
         },
     },
-    include: [
-        'packages/renderer/**/*.ts',
-        'packages/renderer/**/*.vue',
-        'packages/renderer/**/*.js',
-        'src/**/*.ts',
-        'src/**/*.d.ts',
-        'src/**/*.vue',
+    "include": [
+        "packages/renderer/**/*.ts",
+        "packages/renderer/**/*.vue",
+        "packages/renderer/**/*.js",
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.vue",
     ],
-    exclude: ['node_modules', 'dist', 'public', 'tests', 'scripts'],
+    "exclude": ["node_modules", "dist", "public", "tests", "scripts"],
 }
