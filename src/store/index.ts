@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable @typescript-eslint/no-extra-semi */
+
 import { InjectionKey } from 'vue';
 import { createStore, Store as VuexStore, CommitOptions, DispatchOptions } from 'vuex';
 
@@ -21,7 +23,7 @@ export type Store = Omit<VuexStore<State>, 'getters' | 'commit' | 'dispatch'> & 
     commit<K extends keyof Mutations, P extends Parameters<Mutations[K]>[1]>(
         key: K,
         payload: P,
-        options?: CommitOptions
+        options?: CommitOptions,
     ): ReturnType<Mutations[K]>;
 } & {
     dispatch<K extends keyof Actions>(key: K, payload?: Parameters<Actions[K]>[1], options?: DispatchOptions): ReturnType<Actions[K]>;
@@ -36,3 +38,5 @@ export function useStore(): Store {
 }
 
 export { State, Mutation, Action };
+
+export default store;
