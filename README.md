@@ -8,7 +8,7 @@ Template Setup: run `node configure-package.js` to configure.
 
 ---
 
-## `Vite 2.x + Vue 3.x + Tailwind 2.x + Typescript 4.x starter ⚡`
+## `Vite 2.x + Vue 3.x + Tailwind 3.x + Typescript 4.x starter ⚡`
 
 ![Vite, Vue, Tailwind CSS](https://user-images.githubusercontent.com/11320080/111277027-a9384c00-8640-11eb-8323-21889bd7c609.png)
 
