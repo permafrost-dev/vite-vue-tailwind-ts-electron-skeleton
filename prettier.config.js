@@ -19,7 +19,7 @@ const overrides = {
                 parser: 'json',
             },
         },
-    ]
+    ],
 };
 
 /** @type {import('prettier').Options} */
