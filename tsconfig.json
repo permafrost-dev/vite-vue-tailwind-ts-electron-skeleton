@@ -9,6 +9,7 @@
         "jsx": "preserve",
         "sourceMap": false,
         "lib": ["esnext", "dom"],
+        "typeRoots": ["node_modules/@types", "node_modules/jest/types"],
         "types": ["jest", "node", "vite/client"],
         "paths": {
             "@/*": ["src/*"],
