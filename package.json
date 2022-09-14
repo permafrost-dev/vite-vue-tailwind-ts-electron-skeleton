@@ -62,7 +62,7 @@
         "@tailwindcss/line-clamp": "^0.4.0",
         "@tailwindcss/typography": "^0.5.2",
         "@types/electron-devtools-installer": "2.2.2",
-        "@types/jest": "^27.4.1",
+        "@types/jest": "^29.0.2",
         "@types/node": "^18.0.0",
         "@types/tailwindcss": "^3.0.9",
         "@typescript-eslint/eslint-plugin": "^5.15.0",
