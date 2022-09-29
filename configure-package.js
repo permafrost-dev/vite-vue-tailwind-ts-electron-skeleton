@@ -119,7 +119,6 @@ const processFiles = (directory, packageInfo) => {
             '.',
             '..',
             '.git',
-            '.github',
             '.editorconfig',
             '.gitattributes',
             '.gitignore',
