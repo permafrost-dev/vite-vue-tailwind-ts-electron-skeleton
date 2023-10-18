@@ -61,7 +61,7 @@
         "@tailwindcss/forms": "^0.5.3",
         "@tailwindcss/line-clamp": "^0.4.2",
         "@tailwindcss/typography": "^0.5.7",
-        "@types/electron-devtools-installer": "2.2.3",
+        "@types/electron-devtools-installer": "2.2.4",
         "@types/jest": "^29.1",
         "@types/node": "^18.7.23",
         "@types/tailwindcss": "^3.0.11",
