@@ -48,7 +48,7 @@
         ]
     },
     "dependencies": {
-        "electron-updater": "^5.2.4",
+        "electron-updater": "^6.1.8",
         "electron-webpack": "^2.8.2",
         "vue": "^3.2",
         "vue-router": "^4.1",
